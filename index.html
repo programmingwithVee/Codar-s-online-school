@@ -8,6 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./icomoon/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
 </head>
@@ -109,13 +111,13 @@
 
 
     <section class="hero-section">
-      <div class="offset">
-        <div class="grid">
-          <div class="hero-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 hero-img">
             <div class="overlay"></div>
-            <img src="./images/flex-img.jpeg" alt="">
+            <img src="./images/flex-img.jpeg" alt="" class="img-fluid">
           </div>
-          <div class="hero-text">
+          <div class="col-lg-6 col-md-12 hero-text mt-md-5 mt-sm-5 mt-5">
             <h1>Join the millions learning to code <br> with Codar for free</h1>
             <form action="">
               <div class="input-control">
@@ -159,7 +161,7 @@
         <h5>Start Learning</h5>
         <h1>Popular Courses</h1>
       </div>
-      <div class="offset">
+      <div class="container">
         <div class="grid-container">
           <a href="">
             <div class="grid-1">
@@ -208,13 +210,13 @@
 
 
     <section class="stories">
-      <div class="offset">
-        <div class="grid">
-          <div class="stories-text">
+      <div class="container">
+        <div class="row">
+          <div class="stories-text col-lg-9 col-md-6">
             <h1>Stories from real people</h1>
             <p>Watch and read stories from the Codar community.</p>
           </div>
-          <div class="more-stories">
+          <div class="more-stories col-lg-3 col-md-6">
             <a href="">Explore more stories <i class="icon-arrow-circle-o-right"></i></a>
           </div>
         </div>
@@ -272,6 +274,9 @@
 
 
   <script src="./index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 </body>
 
