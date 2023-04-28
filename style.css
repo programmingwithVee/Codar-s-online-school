@@ -57,14 +57,15 @@
     gap: 50px;
 }
 .offset{
-    margin-left: 8.33333333%;
-    margin-right:8.33333333%;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 /* reset styles */
 * {
     color: inherit;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: Inter;
@@ -201,7 +202,7 @@ height: 100%;
     z-index: 1;
 }
 .hero-img img{
-    width: 80%;
+    width: 100%;
 }
 .hero-text{
     grid-column: span 6;
@@ -407,6 +408,18 @@ height: 100%;
     color: white;
     overflow: hidden;
 }
+@media only screen and (max-width:1300px) {
+    .offset {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:1000px){
+    .offset {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
 @media only screen and (max-width:991px){
     .close{
         display: flex;
@@ -467,22 +480,35 @@ height: 100%;
     .more-stories{
         grid-column: span 12;
     }
+    .offset {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:786px) {
+    .offset {
+        max-width: 660px;
+        margin: 0 auto;
+    }
 }
 @media only screen and (max-width:586px){
     .hero-img{
-        grid-column: span 10;
-        align-self: center;
+        grid-column: span 8;
     }
     .hero-text{
-        grid-column: span 10;
+        grid-column: span 8;
     }
     .stories-text{
-        grid-column: span 10;
+        grid-column: span 9;
     }
     .more-stories{
-        grid-column: span 10;
+        grid-column: span 9;
     }
 header::before {
     height: 70px;
+}
+.offset {
+    max-width: 360px;
+    margin: 0 auto;
 }
 }
