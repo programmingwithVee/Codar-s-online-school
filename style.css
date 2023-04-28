@@ -425,7 +425,7 @@ height: 100%;
         display: flex;
     }
     .menu{
-        margin-right: 5%;
+        /* margin-right: 5%; */
         display: flex;
     }
     .containers ul{
